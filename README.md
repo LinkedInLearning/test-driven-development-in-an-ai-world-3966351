@@ -26,9 +26,20 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+	- Nodejs
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
+5. Run tests:
+    ```bash
+    npm run test
+    ```
 
 ## Instructor
 
