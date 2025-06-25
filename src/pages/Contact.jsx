@@ -92,6 +92,7 @@ const Contact = () => {
                     ></textarea>
                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                 </div>
+                <button type='submit' className='btn btn-success'>Submit</button>
             </form>
         </div>
     );
