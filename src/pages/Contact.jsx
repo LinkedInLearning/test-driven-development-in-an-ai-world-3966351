@@ -4,6 +4,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [image, setImage] = useState(null);  // Add state for file
     const [errors, setErrors] = useState({});
 
     const validateName = () => {
@@ -30,11 +31,12 @@ const Contact = () => {
         return '';
     };
     const reset = () => {
-                        setName('');
-                        setEmail('');
-                        setMessage('');
-                        setErrors({});
-                    }
+        setName('');
+        setEmail('');
+        setMessage('');
+        setImage(null);  // Reset image state
+        setErrors({});
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -97,6 +99,17 @@ const Contact = () => {
                         required
                     ></textarea>
                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="image" className="form-label">Attach image:</label>
+                    <input
+                        type="file"
+                        id="image"
+                        name="image"
+                        className="form-control"
+                        accept="image/*"
+                        onChange={(e) => setImage(e.target.files[0])}
+                    />
                 </div>
                 <button type='submit' className='btn btn-success'>Submit</button>
                 <button

@@ -18,4 +18,11 @@ describe('validateName', () => {
         expect(screen.getByText("Reset")).toBeInTheDocument();
     });
  
+    it('shows file input for image attachment', () => {
+        render(<Contact />);
+        const fileInput = screen.getByLabelText('Attach image:');
+        expect(fileInput).toBeInTheDocument();
+        expect(fileInput.type).toBe('file');
+        expect(fileInput.accept).toBe('image/*');
+    });
 });
