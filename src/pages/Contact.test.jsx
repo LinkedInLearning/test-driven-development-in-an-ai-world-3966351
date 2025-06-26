@@ -7,11 +7,15 @@ describe('validateName', () => {
         render(<Contact/>);
         expect(screen.getByText('Contact')).toBeInTheDocument();
     });
-
+ 
     it('shows submit button', ()=>{
         render(<Contact/>);
         expect(screen.getByText("Submit")).toBeInTheDocument()
     })
 
+    it('shows Reset button', () => {
+        render(<Contact />);
+        expect(screen.getByText("Reset")).toBeInTheDocument();
+    });
  
 });

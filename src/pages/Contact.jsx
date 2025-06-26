@@ -29,6 +29,12 @@ const Contact = () => {
         }
         return '';
     };
+    const reset = () => {
+                        setName('');
+                        setEmail('');
+                        setMessage('');
+                        setErrors({});
+                    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -52,7 +58,7 @@ const Contact = () => {
     return (
         <div>
             <h2 className="mb-3 mt-3">Contact</h2>
-
+ 
             <form onSubmit={handleSubmit} className="needs-validation" noValidate>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name:</label>
@@ -93,6 +99,13 @@ const Contact = () => {
                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                 </div>
                 <button type='submit' className='btn btn-success'>Submit</button>
+                <button
+                    type="button"
+                    className="btn btn-secondary ms-2"
+                    onClick={reset}
+                >
+                    Reset
+                </button>
             </form>
         </div>
     );
