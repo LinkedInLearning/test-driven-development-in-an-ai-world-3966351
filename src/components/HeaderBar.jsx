@@ -3,11 +3,11 @@ function HeaderBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success">
             <div className="container">
-                <Link className="navbar-brand text-white" to="/">Odyssey AI Travels</Link>
+                <a className="navbar-brand text-white" href="/">Odyssey AI Travels</a>
                 <div className="navbar-nav ">
-                    <Link className="nav-link text-white" to="/">Home</Link>
-                    <Link className="nav-link text-white" to="/about">About</Link>
-                    <Link className="nav-link text-white" to="/contact">Contact</Link>
+                    <a className="nav-a text-white text-decoration-none px-2" href="/">Home</a>
+                    <a className="nav-a text-white text-decoration-none px-2" href="/about">About</a>
+                    <a className="nav-a text-white text-decoration-none px-2" href="/contact">Contact</a>
                 </div>
             </div>
         </nav>
