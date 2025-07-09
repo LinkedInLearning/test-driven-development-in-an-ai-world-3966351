@@ -1,0 +1,16 @@
+name: TDD workflow
+on:
+  pull_request:
+    branches: [ main , dev]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm i
+      - name: run local tests
+        run: npm run test
