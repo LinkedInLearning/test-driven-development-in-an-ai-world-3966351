@@ -5,6 +5,8 @@ This is the repository for the LinkedIn Learning course `Test-Driven Development
 
 ## Course Description
 
+In this course, Carlos Solís—an author, professor, developer, and Certified Scrum Master—explores how to integrate artificial intelligence with Test Driven Development (TDD) and shows you how to transform your coding practices into a reliable, scalable workflow. Learn to use various AI tools to generate and refine code with more precision and context. Delve into the fundamentals of TDD, including unit tests, acceptance tests, and integration tests, and learn about the powerful Red-Green-Refactor cycle. Discover how to configure your development environment for AI-assisted coding and set up testing frameworks. This course empowers you to build new features using TDD principles, utilizing AI to speed up development while maintaining high-quality standards. By the end of this course, you will be able to transform your approach to software development with cutting-edge techniques that boost confidence and elevate your coding capability.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -43,17 +45,17 @@ To resolve this issue:
 
 ## Instructor
 
-Instructor name
+Carlos Solís
 
-Instructor description
+System Developer and Author
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/carlos-solis?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/test-driven-development-in-an-ai-world
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQHQ4uAm0kxN8A/learning-public-crop_675_1200/B56ZiaQn4PHMAY-/0/1754934706491?e=2147483647&v=beta&t=1qSHwueK6iIayKAi66Ezz4Y5u9yuFmK2HJrrCBJ_9fo
 
